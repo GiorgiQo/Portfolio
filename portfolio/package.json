@@ -1,1 +1,11 @@
-{"name":"giorgi-film-portfolio","private":true,"type":"module","scripts":{"dev":"node server.mjs","build":"node build.mjs","check":"node --check app.js && node --check admin.js && node --check api.js"}}
+{
+  "name": "giorgi-film-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node build.mjs",
+    "check": "node --check app.js && node --check admin.js && node --check api.js && node --check engagement.js && node --check engagement-api.js && node --check moderation.js",
+    "test": "node --test *.test.mjs"
+  }
+}
