@@ -1,5 +1,9 @@
+import {inject} from '@vercel/analytics';
 import {engagementBar,loadEngagement,openDiscussion,closeDiscussion} from './engagement.js';
 import {configured,getProjects,videoSource,validUrl} from './api.js';
+
+// Initialize Vercel Web Analytics
+inject();
 // Stored category values remain compatible with the admin form and database.
 const categoryNames = {'კომერციული':'Commercial','მოგზაურობა':'Travel','მუსიკალური':'Music','პერსონალური':'Personal'};
 const categoryLabel = value => categoryNames[value] || value;
